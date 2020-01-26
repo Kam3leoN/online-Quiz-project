@@ -1,0 +1,252 @@
+<html>
+<head>
+<style>
+
+.button { 
+ 		border:0.1px solid white;
+ 		width:1250px;
+		color:white;
+		text-align:center;
+		padding:20px 15px;
+		text-decoration:none;
+		font-size:20px;
+		background-color:#AB76C3;
+		}
+ 							
+ 			
+	.div { width:500px;
+		margin-top:0px;
+		height:150px;
+		margin-left:-50px;
+		}
+	.teachingzone { background-color:white;
+					border:0px solid white;
+					color:green;
+					height:130px;
+					text-align:left;
+					margin:-130px 0px 0px 450px;
+					font-size:50px;
+					}
+
+
+
+
+		.division { border:0.5px solid gray;
+			background-color:white;
+			width:800px;
+			height:normal;
+			margin:100px 250px 0px 260px;
+			}
+			
+	.division_head { border:0.5px solid gray;
+			background-color:#98004D;
+			width:778px;
+			padding-top:10px;
+			padding-bottom:10px;
+			color:white;
+			text-align:left;
+			padding-left:20px;
+			margin:0px;
+			}
+			
+	/* questions program start */
+	
+	.question_block { border:1px solid white;
+			width:normal;
+			margin-top:10px:
+			margin:left:10px;
+			margin:right:10px;
+}
+
+		.question_head { border:1px solid white;
+			color:black;
+			padding:16px;
+			margin:3px 5px 0px 5px;
+			background-color:#f5f5f5;
+			}			
+	
+		.question_body { border:0.2px solid gray;
+		 		color:black;
+		 		background-color:white;
+		 		margin:0px 5px 0px 5px;
+		 		}
+		 .shift { border:1px solid white;
+		 		background-color:white;
+		 		margin:0px 0px 0px 50px;
+		 		color:black;
+		 		}		
+.submit { border:1px solid gray;
+		color:white;
+		background-color:green;
+		padding:10px 10px;
+		margin:20px 1px 0px 20px;
+		}
+	
+	.clear { border:1px solid gray;
+		color:white;
+		background-color:green;
+		padding:10px 20px;
+		margin:-30px 1px 0px 30px;
+		}
+	
+			
+	</style>
+    <title>Quiz Questions And Answers</title>
+</head>
+
+<body>
+
+<div>
+	<img src="teachingzone.jpeg" alt="home" class="div">
+	</div>
+	
+	<div>
+	<div class="teachingzone"><address>Teaching<br>Zone </address></div>
+	</div>
+			
+	<div class="button"></div>
+
+
+    
+    
+    <form class="division">
+    <div class="division_head">HTML test1</div>
+    <div class="question_block">
+    <div class="question_head">
+        <b>Ques 1 :</b> <b>Which declaration of the main method below would allow a class to be started as a standalone program. </b>
+       </div>
+       <div class="question_body">
+        <blockquote>
+    <input type="radio" name="radio1" value="public static int main(char args[])">public static int main(char args[])<br>
+    <input type="radio" name="radio1" value="public static void main(String args[])">public static void main(String args[])<br>
+    <input type="radio" name="radio1" value="public static void MAIN(String args[])">public static void MAIN(String args[])<br>
+   
+    </blockquote>
+    </div>
+</div>
+<p><b>
+<hr>
+ <div class="question_block">
+    <div class="question_head">
+Question 2.
+<br>They -------------------- here very often.<br></b>
+</div>
+       <div class="question_body">
+<blockquote>
+<input type="radio" name="q2" value="don't come">don't come<br>
+<input type="radio" name="q2" value="doesn't come">doesn't come<br>
+<input type="radio" name="q2" value="doesn't comes">doesn't comes<br>
+</blockquote>
+</div>
+</div>
+<p><b>
+<hr>
+ <div class="question_block">
+    <div class="question_head">
+Question 3.
+<br>John and Mary -------------------- twice a week.<br></b>
+</div>
+       <div class="question_body">
+<blockquote>
+<input type="radio" name="q3" value="come">come<br>
+<input type="radio" name="q3" value="comes">comes<br>
+<input type="radio" name="q3" value="coming">coming<br>
+</blockquote>
+</div>
+</div>
+<p><b>
+<hr>
+ <div class="question_block">
+    <div class="question_head">
+Question 4.
+<br>I -------------------- mind at all.<br></b>
+</div>
+       <div class="question_body">
+
+<blockquote>
+<input type="radio" name="q4" value="not">not<br>
+<input type="radio" name="q4" value="isn't">isn't<br>
+<input type="radio" name="q4" value="don't">don't<br>
+
+
+</blockquote>
+</div>
+</div>
+<p><b>
+<hr>
+ <div class="question_block">
+    <div class="question_head">
+Question 5.
+<br>It -------------------- sense.<br></b>
+
+</div>
+       <div class="back_body">
+<blockquote>
+<input type="radio" name="q5" value="don't make">don't make<br>
+<input type="radio" name="q5" value="doesn't makes">doesn't makes<br>
+<input type="radio" name="q5" value="doesn't make">doesn't make<br>
+</div>
+       <div class="question_body">
+</blockquote>
+</div>
+</div>
+<p><b>
+<hr>
+
+</form>
+
+<input type="button"value="Submit" class="submit" onClick="getScore(this.form);">
+<input type="reset" value="Clear" class="clear"><p>
+Number of score out of 5 = <input type= text size 5 name= "mark"><br>
+Score in percentage = <input type=text size=5 name="percentage"><br>
+
+
+
+
+    <form method="post" name="Form" onsubmit="" action="">
+</form>
+</div>
+</form>
+
+
+<script>
+    var numQues = 5;
+var numChoi = 3;
+var answers = new Array(5);
+    answers[0] = "public static void main(String args[])";
+    answers[1] = "don't come";
+    answers[2] = "come";
+    answers[3] = "don't";
+    answers[4] = "doesn't make";
+    
+      function getScore(form) {
+
+   var score = 0;
+  var currElt;
+  var currSelection;
+  for (i=0; i<numQues; i++) {
+    currElt = i*numChoi;
+    answered=false; 
+    for (j=0; j<numChoi; j++) {
+      currSelection = form.elements[currElt + j];
+      if (currSelection.checked) {
+        answered=true;
+        if (currSelection.value == answers[i]) {
+          score=score+1;
+          break;
+        }
+        else
+        score=score-0.25;
+      }
+    }
+    
+  }
+
+  var scoreper = Math.round(score/numQues*100);
+  form.percentage.value = scoreper + "%";
+  form.mark.value=score;
+
+
+}
+    </script>
+</html>
